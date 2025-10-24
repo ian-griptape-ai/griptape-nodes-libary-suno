@@ -33,7 +33,7 @@ git clone https://github.com/yourusername/griptape-nodes-libary-suno.git
 cd griptape-nodes-libary-suno
 ```
 
-2. Open the **Settings** → **Libraries** menu and add the full path to `/suno/griptape_nodes_library.json` in your current working directory. You can get your current working directory with the `pwd` command on MacOS or Linux.
+2. Open the **Settings** → **Libraries** menu and add the full path to `./suno/griptape_nodes_library.json` in your current working directory. You can get your current working directory with the `pwd` command on MacOS or Linux.
 
 3. Add your SUNO_API_KEY to Griptape Nodes in the **Settings** → **API Keys & Secrets** menu
 
