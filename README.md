@@ -1,6 +1,6 @@
-# Suno Music Generation Node Library
+# Suno (Unofficial) Music Generation Node Library
 
-Generate AI-powered music tracks using the Suno API within Griptape Nodes. Create custom songs with your own lyrics, styles, and vocal preferences, or let AI auto-generate music from simple descriptions.
+Generate AI-powered music tracks using the Suno (Unofficial) API within Griptape Nodes. Create custom songs with your own lyrics, styles, and vocal preferences, or let AI auto-generate music from simple descriptions.
 
 ## Features
 
