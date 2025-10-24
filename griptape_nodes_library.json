@@ -1,0 +1,52 @@
+{
+  "name": "Suno API",
+  "library_schema_version": "0.1.0",
+  "settings": [
+    {
+      "description": "API keys required by Suno API nodes",
+      "category": "app_events.on_app_initialization_complete",
+      "contents": {
+        "secrets_to_register": [
+          "SUNO_API_KEY"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "author": "Griptape",
+    "description": "Generate music using Suno AI API - create songs with custom lyrics, styles, and vocals",
+    "library_version": "1.0.0",
+    "engine_version": "0.55.0",
+    "tags": ["AI", "Music", "Audio", "Generation"],
+    "dependencies": {
+      "pip_dependencies": ["requests"],
+      "pip_install_flags": ["--upgrade"]
+    }
+  },
+  "categories": [
+    {
+      "music": {
+        "title": "Music Generation",
+        "description": "AI-powered music creation and audio processing",
+        "color": "border-purple-500",
+        "icon": "Music"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "class_name": "SunoGenerateMusic",
+      "file_path": "suno/generate_music.py",
+      "metadata": {
+        "category": "music",
+        "description": "Generate music tracks using Suno AI with custom prompts, styles, and vocals",
+        "display_name": "Suno Generate Music",
+        "icon": "music",
+        "group": "generation"
+      }
+    }
+  ],
+  "workflows": [],
+  "is_default_library": false
+}
+
