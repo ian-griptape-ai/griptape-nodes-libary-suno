@@ -232,7 +232,7 @@ Bearer token authentication using your `SUNO_API_KEY`.
 ## Support
 
 For API-related issues:
-- [Suno API Documentation](https://docs.sunoapi.org)
+- [Suno (Unoofficial) API Documentation](https://docs.sunoapi.org)
 - [API Dashboard](https://api.sunoapi.org)
 
 For node-related issues:
