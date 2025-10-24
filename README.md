@@ -17,24 +17,27 @@ Generate AI-powered music tracks using the Suno API within Griptape Nodes. Creat
 - **Cover Art**: Automatically generated cover image for each song
 - **Complete Metadata**: Outputs title, genre/style tags, and lyrics for each generation
 
-## Installation
+## 📦 Installation
 
-### Option 1: Using uv (Recommended)
+### Prerequisites
 
-1. Clone or download this library to your local machine
-2. Install dependencies using [uv](https://docs.astral.sh/uv/):
-   ```bash
-   cd griptape-nodes-libary-suno
-   uv sync
-   ```
-3. Place the library folder in your Griptape Nodes libraries directory
-4. Configure your Suno API key in Settings > Secrets as `SUNO_API_KEY`
+- Griptape Nodes installed
+- Python 3.12 or higher
+- Suno API key ([Get one here](https://docs.sunoapi.org))
 
-### Option 2: Automatic Installation
+### Install from Repository
 
-1. Place this folder in your Griptape Nodes libraries directory
-2. The required dependencies (`requests`) will be installed automatically via pip
-3. Configure your Suno API key in Settings > Secrets as `SUNO_API_KEY`
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/griptape-nodes-libary-suno.git
+cd griptape-nodes-libary-suno
+```
+
+2. Open the **Settings** → **Libraries** menu and add the full path to `/suno/griptape_nodes_library.json` in your current working directory. You can get your current working directory with the `pwd` command on MacOS or Linux.
+
+3. Add your SUNO_API_KEY to Griptape Nodes in the **Settings** → **API Keys & Secrets** menu
+
+4. Drag a node from the Suno category in the Node Sidebar onto your canvas and start creating music!
 
 ## Getting Started
 
