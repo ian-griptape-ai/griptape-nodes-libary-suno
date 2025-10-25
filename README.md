@@ -23,7 +23,7 @@ Generate AI-powered music tracks using the Suno (Unofficial) API within Griptape
 
 - Griptape Nodes installed
 - Python 3.12 or higher
-- Suno API key ([Get one here](https://docs.sunoapi.org))
+- Suno (Unofficial) API key ([Get one here](https://docs.sunoapi.org))
 
 ### Install from Repository
 
@@ -125,7 +125,7 @@ The node will auto-generate appropriate lyrics and create 2 music variations bas
 
 The node uses an asynchronous polling approach with automatic artifact creation:
 
-1. **Submit Task**: Sends generation request to Suno API
+1. **Submit Task**: Sends generation request to Suno (Unofficial) API
    - Includes a dummy callback URL (required by API)
    - Actual status checking done via polling
 2. **Poll for Status**: Checks task status every 10 seconds
@@ -198,7 +198,7 @@ The node validates all parameters before generation:
 ## Troubleshooting
 
 ### "Missing SUNO_API_KEY"
-Configure your API key in Settings > Secrets. Get your key from the [Suno API Dashboard](https://docs.sunoapi.org).
+Configure your API key in Settings > Secrets. Get your key from the [Suno (Unofficial) API Dashboard](https://docs.sunoapi.org).
 
 ### "Task did not complete within timeout"
 The task may still be processing. Use the `task_id` output to check status later, or try again with a simpler prompt.
@@ -209,9 +209,9 @@ Check the character limits for your selected model and reduce prompt/style/title
 ### No music URLs in output
 Verify your API key has sufficient credits. Check the API dashboard for account status.
 
-## API Reference
+## Suno (Unofficial) API Reference
 
-This library uses the [Suno API v1](https://docs.sunoapi.org/suno-api/generate-music) for music generation.
+This library uses the [Suno (Unofficial) API v1](https://docs.sunoapi.org/suno-api/generate-music) for music generation.
 
 ### Endpoints Used
 - `POST /api/v1/generate` - Submit generation task
