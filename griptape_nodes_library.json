@@ -15,8 +15,8 @@
   "metadata": {
     "author": "Griptape",
     "description": "Generate music using Suno AI API - create songs with custom lyrics, styles, and vocals",
-    "library_version": "1.0.0",
-    "engine_version": "0.55.0",
+    "library_version": "1.0.1",
+    "engine_version": "0.66.0",
     "tags": ["AI", "Music", "Audio", "Generation"],
     "dependencies": {
       "pip_dependencies": ["requests"],
