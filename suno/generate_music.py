@@ -15,6 +15,7 @@ from griptape_nodes.exe_types.node_types import DataNode, AsyncResult
 from griptape_nodes.traits.options import Options
 from griptape_nodes.traits.slider import Slider
 from griptape_nodes.retained_mode.griptape_nodes import GriptapeNodes
+from griptape_nodes.retained_mode.events.os_events import ExistingFilePolicy
 from griptape.artifacts import AudioUrlArtifact, ImageUrlArtifact
 
 logger = logging.getLogger(__name__)
@@ -693,7 +694,7 @@ class SunoGenerateMusic(DataNode):
             
             # Save to static storage
             static_files_manager = GriptapeNodes.StaticFilesManager()
-            saved_url = static_files_manager.save_static_file(audio_bytes, filename)
+            saved_url = static_files_manager.save_static_file(audio_bytes, filename, ExistingFilePolicy.CREATE_NEW)
             
             # Create AudioUrlArtifact
             self._log(f"Saved audio track {track_index} to static storage as {filename}")
@@ -719,7 +720,7 @@ class SunoGenerateMusic(DataNode):
             
             # Save to static storage
             static_files_manager = GriptapeNodes.StaticFilesManager()
-            saved_url = static_files_manager.save_static_file(image_bytes, filename)
+            saved_url = static_files_manager.save_static_file(image_bytes, filename, ExistingFilePolicy.CREATE_NEW)
             
             # Create ImageUrlArtifact
             self._log(f"Saved cover image to static storage as {filename}")
